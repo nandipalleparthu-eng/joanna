@@ -1,4 +1,4 @@
-# 🌸 3D Botanical Lily Animation with Python
+# 🌸 3D Botanical Lily Animation with Python for Joanna
 
 A procedural 3D botanical animation of a bouquet of Oriental lilies, created with Python. The animation is designed in a vertical 9:16 format for Instagram Reels.
 
@@ -42,9 +42,7 @@ The script generates a vertical animated lily video suitable for showcasing in s
 
 ## 💗 About
 
-Created as a Python animation project exploring procedural botanical modeling and cinematic visual storytelling.
-
-If you found this project through my coding reels, feel free to explore the source code!
+Made for u<3
 
 ---
 
