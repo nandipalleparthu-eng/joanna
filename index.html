@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌸 Lily Animation — For You Joanna</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0d0d14;
+      color: #e8e0f0;
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #f0c8d8;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #8a7a9a;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 120px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #c084a0, transparent);
+      margin: 18px auto;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(200, 100, 150, 0.25), 0 0 120px rgba(100, 60, 120, 0.15);
+      border: 1px solid rgba(200, 150, 180, 0.15);
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      display: block;
+      background: #000;
+    }
+
+    .no-video {
+      width: 100%;
+      max-width: 420px;
+      padding: 40px;
+      text-align: center;
+      border: 1px dashed rgba(200, 150, 180, 0.3);
+      border-radius: 16px;
+      color: #7a6a8a;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .no-video code {
+      display: inline-block;
+      margin-top: 12px;
+      background: #1a1a2a;
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: #c084a0;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.75rem;
+      color: #4a3a5a;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌸 For You, Joanna</h1>
+    <div class="divider"></div>
+    <p>Lilium Orientalis &nbsp;·&nbsp; 3D Parametric Botanical Animation</p>
+  </header>
+
+  {% if has_video %}
+  <div class="video-wrapper">
+    <video controls autoplay loop muted playsinline>
+      <source src="/video/lily_3d_botanical_animation.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  {% else %}
+  <div class="no-video">
+    🎬 Video not yet rendered.<br/>
+    Run the animation script first:<br/>
+    <code>python3 generate_lily_animation.py</code>
+  </div>
+  {% endif %}
+
+  <footer>
+    &copy; Lily Animation &nbsp;·&nbsp; Python · NumPy · OpenCV
+  </footer>
+
+</body>
+</html>
